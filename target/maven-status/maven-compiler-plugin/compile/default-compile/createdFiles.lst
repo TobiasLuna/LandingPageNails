@@ -1,0 +1,8 @@
+com/landingpage/langinnails/LanginnailsApplication.class
+com/landingpage/entries/PropiedadesConfEmail.class
+com/landingpage/langinnails/Controller/Controlador.class
+com/landingpage/config/EmailConfig.class
+com/landingpage/entries/Propiedades.class
+com/landingpage/entries/DatosTurno.class
+com/landingpage/config/SecurityConfig.class
+com/landingpage/ser/EmailSer.class

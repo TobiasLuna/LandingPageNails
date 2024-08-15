@@ -1,0 +1,248 @@
+@charset "UTF-8";
+section {
+  height: 100vh;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  section .item {
+    padding: 8px;
+  }
+}
+@media (max-width: 400px) {
+  section .item {
+    padding: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ec407a;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+nav {
+  background-color: #fef9e7;
+}
+
+.container {
+  padding-top: 4rem;
+}
+
+.home {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: #fef9e7;
+}
+.home .inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.home .inicio .text h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+}
+.home .inicio .text p {
+  font-family: "Poppins", sans-serif;
+}
+.home .inicio .text .btn-contacto {
+  border: 1px solid #ec407a;
+  border-radius: 5%;
+  background: none;
+  color: #ec407a;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+}
+.home .inicio .text .btn-contacto:hover {
+  color: #fff;
+  background: #ec407a;
+}
+.home .inicio .imagen {
+  width: 500px;
+}
+.home .inicio .imagen img {
+  width: 100%; /* Ajuste responsive */
+  max-width: 400px;
+  height: auto; /* Mantener proporción */
+}
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .inicio {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home .inicio .imagen {
+    width: 100%;
+  }
+  .home .inicio .imagen img {
+    margin-top: 2rem;
+    max-width: 300px;
+  }
+}
+
+.sect .tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permitir el wrap para mejor adaptación */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre tarjetas */
+}
+.sect .tarjetas div {
+  justify-content: center;
+  align-items: center;
+}
+.sect .tarjetas img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .sect .tarjetas {
+    flex-direction: column; /* Cambia la dirección de las tarjetas */
+  }
+  .sect .tarjetas img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.flasher {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.flasher #image {
+  margin-right: 4rem;
+}
+.flasher #image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 400px;
+}
+.flasher #text {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+.flasher #text h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .flasher {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flasher #image {
+    display: none;
+  }
+  .flasher #text h4 {
+    margin-top: 20rem;
+    font-size: 30px;
+  }
+}
+
+.art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #eceff1;
+  padding: 2rem;
+}
+.art h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.art h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .art h4 {
+    font-size: 25px;
+  }
+  .art h5 {
+    font-size: 20px;
+  }
+}
+
+.contacto {
+  padding: 2rem 0;
+}
+.contacto h4 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.contacto .contenedor {
+  background-color: #37474f;
+  width: 500px;
+  height: auto;
+}
+.contacto .formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.contacto .formulario .form-floating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contacto .formulario .btn-contacto {
+  border: 1px solid #fff;
+  border-radius: 5%;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.contacto .formulario .btn-contacto:hover {
+  color: #000;
+  background: #fff;
+}
+@media (max-width: 768px) {
+  .contacto .contenedor {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/* Ajustes generales para evitar colisiones */
+@media (max-width: 768px) {
+  .sect, .flasher, .home, .art, .contacto {
+    margin-bottom: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

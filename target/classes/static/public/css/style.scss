@@ -1,0 +1,281 @@
+// Variables
+$color-principal: hwb(0 80% 20%);
+$color-navbar:  #fef9e7;
+$color-btn:  #ec407a;
+$font-p: "Poppins", sans-serif;
+
+
+
+section {
+    height: 100vh;
+    margin-bottom: 2rem;
+
+    .item {
+        @media (max-width: 600px) {
+            padding: 8px;
+        }
+        @media (max-width: 400px) {
+            padding: 6px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ec407a;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+nav {
+    background-color: $color-navbar;
+}
+
+.container {
+    padding-top: 4rem;
+}
+
+.home {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: $color-navbar;
+
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        .text {
+            h4 {
+                font-family: "Playfair Display", serif;
+                font-size: 50px;
+            }
+            p {
+                font-family: $font-p;
+            }
+            .btn-contacto {
+                border: 1px solid $color-btn;
+                border-radius: 5%;
+                background: none;
+                color: $color-btn;
+                font-size: 18px;
+                font-family: $font-p;
+                margin-top: 1rem;
+            }
+            .btn-contacto:hover {
+                color: #fff;
+                background: $color-btn;
+            }
+        }
+
+        .imagen {
+            width: 500px;
+            img {
+                width: 100%; /* Ajuste responsive */
+                max-width: 400px;
+                height: auto; /* Mantener proporción */
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        .inicio {
+            flex-direction: column;
+            text-align: center;
+
+            .imagen {
+                width: 100%;
+                img {
+                    margin-top: 2rem;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+.sect {
+    
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permitir el wrap para mejor adaptación */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Espacio entre tarjetas */
+    }
+
+    .tarjetas div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjetas img {
+        width: 100px;
+        height: 100px;
+    }
+
+    @media (max-width: 768px) {
+        .tarjetas {
+            flex-direction: column; /* Cambia la dirección de las tarjetas */
+        }
+
+        .tarjetas img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.flasher {
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    #image {
+        margin-right: 4rem;
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            max-height: 400px;
+        }
+    }
+
+    #text {
+        h4 {
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+        }
+        font-family: $font-p;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        #image {
+           display: none;
+        }
+
+        #text h4 {
+            margin-top: 20rem;
+            font-size: 30px;
+        }
+    }
+}
+
+.art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #eceff1;
+    padding: 2rem;
+
+    h4 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-family: $font-p;
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        h4 {
+            font-size: 25px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    }
+}
+
+.contacto {
+   
+    padding: 2rem 0;
+
+    h4 {
+        font-family: "Playfair Display", serif;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .contenedor
+    {
+        background-color:#37474f ;
+        width: 500px;
+        height: auto;
+    }
+    .formulario {
+        
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        .form-floating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .btn-contacto {
+            border: 1px solid #fff;
+            border-radius: 5%;
+            background: none;
+            color: #fff;
+            font-size: 20px;
+            font-family: $font-p;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+        .btn-contacto:hover {
+            color: #000;
+            background: #fff;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contenedor
+        {
+            width: 300px;
+            height: auto;
+        }
+    }
+}
+
+/* Ajustes generales para evitar colisiones */
+@media (max-width: 768px) {
+    .sect, .flasher, .home, .art, .contacto {
+        margin-bottom: 3rem;
+    }
+}
